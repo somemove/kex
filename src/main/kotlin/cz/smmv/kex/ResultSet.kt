@@ -6,4 +6,4 @@ import java.util.UUID
 
 fun ResultSet.getUUID(key : String) : UUID? = if (getString(key) == null) null else UUID.fromString(getString(key))
 
-fun ResultSet.getLocaleDateTime(key : String) : LocalDateTime? = getTimestamp(key)?.toLocalDateTime()
+fun ResultSet.getLocalDateTime(key : String) : LocalDateTime? = getTimestamp(key)?.toLocalDateTime()
